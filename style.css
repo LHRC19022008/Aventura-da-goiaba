@@ -1,18 +1,30 @@
 body {
-    background-color: #1D4221;
-    color: white;
+    background-color: #F2F8E4; /* Um tom claro e tropical para o fundo */
+    color: #3A5A40; /* Verde escuro para o texto, remetendo à natureza */
     font-family: "Bai Jamjuree", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 100vh; /* Altura total da página */
     margin: 0;
+    padding: 20px;
 }
 
 button {
-    background-color: #64A712;
+    background-color: #F28C28; /* Laranja vibrante, inspirando o tom da goiaba madura */
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #F0B429; /* Um tom mais claro ao passar o mouse */
 }
 
 .passo {
@@ -20,14 +32,30 @@ button {
 }
 
 .passo.ativo {
-    display:block;
+    display: block;
+    animation: fadeIn 0.5s ease; /* Adiciona uma leve animação de entrada */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 main {
     text-align: center;
     max-width: 90%;
+    background-color: #FFF5E1; /* Um tom suave de laranja claro, remetendo à goiaba */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 img {
-    max-width: 90%;
+    max-width: 100%;
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave nas imagens */
 }
